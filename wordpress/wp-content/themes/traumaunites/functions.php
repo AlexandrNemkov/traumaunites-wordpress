@@ -40,6 +40,9 @@ function traumaunites_scripts() {
     // Enqueue main JavaScript
     wp_enqueue_script('traumaunites-script', $theme_url . '/assets/js/build.js', array(), '1.0.0', true);
     
+    // Enqueue survey JavaScript
+    wp_enqueue_script('traumaunites-survey', $theme_url . '/assets/js/survey.js', array(), '1.0.0', true);
+    
     // Enqueue Google Fonts
     wp_enqueue_style('traumaunites-fonts', 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap', array(), null);
 }
