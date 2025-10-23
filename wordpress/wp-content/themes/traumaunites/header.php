@@ -58,8 +58,8 @@
                     <svg class="bg-blue-60 text-white rounded-full size-24 p-4"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#profile"></use></svg>
                 </a>
                 <nav id="profile_menu" class="tw-dropdown" data-js="dropdown">
-                    <a href="<?php echo wp_login_url(); ?>" class="px-16 py-12 bg-white transition hover:text-blue-40">Log in</a>
-                    <a href="<?php echo wp_registration_url(); ?>" class="px-16 py-12 bg-white transition hover:text-blue-40">Register</a>
+                    <a href="<?php echo home_url('/login'); ?>" class="px-16 py-12 bg-white transition hover:text-blue-40">Log in</a>
+                    <a href="<?php echo home_url('/register'); ?>" class="px-16 py-12 bg-white transition hover:text-blue-40">Register</a>
                 </nav>
                 <?php endif; ?>
             </div>
