@@ -4,10 +4,6 @@ Template Name: Custom Register Page
 */
 get_header(); ?>
 
-<!-- Load AirDatepicker CSS and JS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css">
-<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js"></script>
-
 <section class="relative mt-24">
     <div class="container">
         <div class="flex items-center gap-4 flex-wrap text-black text-opacity-80">

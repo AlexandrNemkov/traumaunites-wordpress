@@ -54,6 +54,15 @@ function traumaunites_scripts() {
 }
 add_action('wp_enqueue_scripts', 'traumaunites_scripts');
 
+// Add AirDatepicker to head for specific pages
+function traumaunites_add_datepicker_to_head() {
+    if (is_page('register') || is_page('edit-profile') || is_page('add-patient')) {
+        echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css">' . "\n";
+        echo '<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js"></script>' . "\n";
+    }
+}
+add_action('wp_head', 'traumaunites_add_datepicker_to_head');
+
 // Add custom post types
 function traumaunites_custom_post_types() {
     // Services post type
