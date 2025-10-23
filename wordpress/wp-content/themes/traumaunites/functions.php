@@ -56,7 +56,8 @@ add_action('wp_enqueue_scripts', 'traumaunites_scripts');
 
 // Add AirDatepicker to head for specific pages
 function traumaunites_add_datepicker_to_head() {
-    // Temporarily load for all pages to test
+    // Test comment
+    echo '<!-- AirDatepicker Loading Test -->' . "\n";
     echo '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css">' . "\n";
     echo '<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js"></script>' . "\n";
 }
