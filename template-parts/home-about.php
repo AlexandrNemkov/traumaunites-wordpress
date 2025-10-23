@@ -27,7 +27,7 @@ $doctors_query = new WP_Query(array(
                             </div>
                             <div class="md:flex-1">
                                 <div class="text-20 font-semibold lg:text-32"><?php the_title(); ?></div>
-                                <div class="text-grey-20 tw-html mt-8 lg:mt-16">
+                                <div class="text-grey-20 tw-html mt-8 lg:mt-16 leading-tight">
                                     <?php the_content(); ?>
                                 </div>
                             </div>
@@ -44,7 +44,7 @@ $doctors_query = new WP_Query(array(
                         </div>
                         <div class="md:flex-1">
                             <div class="text-20 font-semibold lg:text-32">Dr. Joaquim Casañas</div>
-                            <div class="text-grey-20 tw-html mt-8 lg:mt-16">
+                            <div class="text-grey-20 tw-html mt-8 lg:mt-16 leading-tight">
                                 <p>Dr. Joaquim Casañas is a highly regarded specialist in peripheral nerve and hand surgery with more than 25 years experience.</p>
                                 <ul>
                                     <li>Dr. Casañas is the President of the Spanish Society of Hand Surgery and a </li>
@@ -62,7 +62,7 @@ $doctors_query = new WP_Query(array(
                         </div>
                         <div class="md:flex-1">
                             <div class="text-20 font-semibold lg:text-32">Team of professionals</div>
-                            <div class="text-grey-20 tw-html mt-8 lg:mt-16">
+                            <div class="text-grey-20 tw-html mt-8 lg:mt-16 leading-tight">
                                 <p>The T-EXPERT team is made up of</p>
                                 <ul>
                                     <li>12 senior surgeons,</li>
@@ -82,7 +82,7 @@ $doctors_query = new WP_Query(array(
                         </div>
                         <div class="md:flex-1">
                             <div class="text-20 font-semibold lg:text-32">T-EXPERT</div>
-                            <div class="text-grey-20 tw-html mt-8 lg:mt-16">
+                            <div class="text-grey-20 tw-html mt-8 lg:mt-16 leading-tight">
                                 <p>T-EXPERT is a traumatology and orthopedic surgery unit, located at the Teknon Medical Center, and directed by Dr. Joaquim Casañas.</p>
                                 <p>T-EXPERT began its career in 2005 with the main objective of offering highly specialized medical care with great technological value, personalized attention to facilitate communication with the patient, and a high capacity to respond to their problems.</p>
                             </div>

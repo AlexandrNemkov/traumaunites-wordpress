@@ -11,7 +11,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
         <div class="bg-blue-20 rounded-24 p-8 pt-100 pb-420 relative md:pb-620 lg:p-32 lg:pt-100">
             <video id="hero-video" src="<?php echo get_template_directory_uri(); ?>/assets/video/body.mp4" class="absolute left-0 right-0 bottom-0 h-380 w-full object-cover rounded-24 pointer-events-none md:h-580 lg:w-body-video lg:h-full lg:left-auto" autoplay muted playsinline loop preload="auto"></video>
             <h1 class="text-40 font-semibold leading-none md:text-60 lg:text-80 lg:w-1/2 xl:text-100" data-animate="text">The future of your body health</h1>
-            <div class="mt-16 opacity-80 md:max-w-460 lg:text-20 lg:mt-24" data-animate="fadein" data-animation-delay="3000">Share your problem with our interactive board and we will do our proffesional best to help you</div>
+            <div class="mt-16 opacity-80 md:max-w-460 lg:text-20 lg:mt-24 leading-tight" data-animate="fadein" data-animation-delay="3000">Share your problem with our interactive board and we will do our proffesional best to help you</div>
             <a href="#appointment-form" class="tw-btn tw-btn--arrow mt-16 w-full group lg:w-300 lg:mt-24" data-animate="fadein" data-animation-delay="3500">
                 <span>Try it now</span>
                 <svg class="tw-btn-icon p-4"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#arrow-up"></use></svg>

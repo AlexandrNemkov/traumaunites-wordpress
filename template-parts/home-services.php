@@ -27,8 +27,8 @@ $services_query = new WP_Query(array(
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240 object-cover">
                         <?php endif; ?>
                         <div class="flex-1">
-                            <div class="text-20 font-semibold lg:text-24"><?php the_title(); ?></div>
-                            <div class="mt-8 opacity-50 lg:text-20">
+                            <div class="text-20 font-bold lg:text-24"><?php the_title(); ?></div>
+                            <div class="mt-8 opacity-50 lg:text-20 leading-tight">
                                 <?php 
                                 $service_description = get_post_meta(get_the_ID(), '_service_description', true);
                                 if ($service_description) {
@@ -47,22 +47,22 @@ $services_query = new WP_Query(array(
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
-                        <div class="text-20 font-semibold lg:text-24">Orthopedic and trauma surgery</div>
-                        <div class="mt-8 opacity-50 lg:text-20">Surgeons, nurses and administrators complete a human and professional team of total trust.</div>
+                        <div class="text-20 font-bold lg:text-24">Orthopedic and trauma surgery</div>
+                        <div class="mt-8 opacity-50 lg:text-20 leading-tight">Surgeons, nurses and administrators complete a human and professional team of total trust.</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-2.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
-                        <div class="text-20 font-semibold lg:text-24">Continuous innovation</div>
-                        <div class="mt-8 opacity-50 lg:text-20">We work with the latest surgical techniques to resolve injuries to the brachial plexus and peripheral nerve.</div>
+                        <div class="text-20 font-bold lg:text-24">Continuous innovation</div>
+                        <div class="mt-8 opacity-50 lg:text-20 leading-tight">We work with the latest surgical techniques to resolve injuries to the brachial plexus and peripheral nerve.</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-3.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
-                        <div class="text-20 font-semibold lg:text-24">Minimally invasive surgery</div>
-                        <div class="mt-8 opacity-50 lg:text-20">We opt for a surgery with lower risk for the patient and with a shorter recovery time.</div>
+                        <div class="text-20 font-bold lg:text-24">Minimally invasive surgery</div>
+                        <div class="mt-8 opacity-50 lg:text-20 leading-tight">We opt for a surgery with lower risk for the patient and with a shorter recovery time.</div>
                     </div>
                 </div>
             <?php endif; ?>
