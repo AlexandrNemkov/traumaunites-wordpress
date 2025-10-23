@@ -3,7 +3,7 @@
         <div class="bg-blue-60 text-white rounded-24 px-16 py-24 pt-120 relative md:flex md:py-16 lg:px-24">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="bg-white text-black flex items-center gap-6 text-20 font-extrabold leading-none absolute top-0 left-0 py-22 pr-16 rounded-br-24">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="20" height="20" alt="<?php bloginfo('name'); ?>">
-                <?php bloginfo('name'); ?>
+                T-EXPERT
                 <div class="bg-white absolute top-0 -right-24"><div class="w-24 h-24 bg-blue-60 rounded-tl-24"></div></div>
                 <div class="bg-white absolute -bottom-24 left-0"><div class="w-24 h-24 bg-blue-60 rounded-tl-24"></div></div>
             </a>
