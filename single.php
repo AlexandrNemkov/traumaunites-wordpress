@@ -27,6 +27,11 @@ get_header(); ?>
                     the_post();
                 ?>
                 <h1 class="text-28 font-semibold leading-none lg:text-48"><?php the_title(); ?></h1>
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="mt-40">
+                        <?php the_post_thumbnail('large', array('class' => 'w-full h-400 object-cover rounded-24')); ?>
+                    </div>
+                <?php endif; ?>
                 <div class="tw-html tw-html--article mt-40">
                     <?php
                     the_content();
