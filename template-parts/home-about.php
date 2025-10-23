@@ -13,7 +13,7 @@ $doctors_query = new WP_Query(array(
 <section id="about" class="relative mt-80 md:mt-120 lg:mt-150 overflow-hidden">
     <div class="container">
         <h2 class="text-28 font-semibold lg:text-48" data-animate="text">About us</h2>
-        <div class="tw-about-carousel f-carousel mt-20 lg:mt-40" data-js="carousel">
+        <div class="tw-about-carousel f-carousel" data-js="carousel">
             <?php if ($doctors_query->have_posts()) : ?>
                 <?php while ($doctors_query->have_posts()) : $doctors_query->the_post(); ?>
                     <div class="f-carousel__slide">
