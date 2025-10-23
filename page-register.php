@@ -79,6 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (typeof AirDatepicker !== 'undefined') {
         console.log('Initializing AirDatepicker...');
         document.querySelectorAll('[data-js="datepicker"]').forEach(elem => {
+            // Determine if this is a birth date field
+            const isBirthDate = elem.name === 'birth_date' || elem.name === 'birthdate';
+            
             new AirDatepicker(elem, {
                 locale: {
                     days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
@@ -97,8 +100,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 prevHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#left"></use></svg>',
                 nextHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#right"></use></svg>',
                 autoClose: true,
-                minDate: new Date(1900, 0, 1),
-                maxDate: new Date(),
+                // For birth date: allow past dates only, for appointment date: allow future dates only
+                minDate: isBirthDate ? new Date(1900, 0, 1) : new Date(),
+                maxDate: isBirthDate ? new Date() : new Date(2030, 11, 31),
                 navTitles: {
                     'days': 'yyyy MMMM',
                 },

@@ -84,3 +84,20 @@ Author: TraumaUnites Team
     line-height: 1.5;
     padding: 16px 14px;
 }
+
+/* Hide native date picker in Chrome/Safari to prevent double calendar */
+input[data-js="datepicker"]::-webkit-calendar-picker-indicator {
+    display: none !important;
+    -webkit-appearance: none !important;
+}
+
+input[data-js="datepicker"]::-webkit-inner-spin-button,
+input[data-js="datepicker"]::-webkit-outer-spin-button {
+    display: none !important;
+    -webkit-appearance: none !important;
+}
+
+/* Ensure custom datepicker input is readonly to prevent native calendar */
+input[data-js="datepicker"] {
+    cursor: pointer !important;
+}
