@@ -22,12 +22,7 @@ get_header(); ?>
                 <div class="relative mt-4">
                     <select name="author" class="tw-input peer" data-js="select">
                         <option value="">All</option>
-                        <?php
-                        $authors = get_users(array('role' => 'author'));
-                        foreach ($authors as $author) {
-                            echo '<option value="' . $author->ID . '">' . $author->display_name . '</option>';
-                        }
-                        ?>
+                        <option value="Dr. Joaquim Casañas">Dr. Joaquim Casañas</option>
                     </select>
                     <svg class="tw-input-icon pointer-events-none peer-focus:rotate-180"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#down"></use></svg>
                 </div>
@@ -37,12 +32,9 @@ get_header(); ?>
                 <div class="relative mt-4">
                     <select name="theme" class="tw-input peer" data-js="select">
                         <option value="">All</option>
-                        <?php
-                        $categories = get_categories();
-                        foreach ($categories as $category) {
-                            echo '<option value="' . $category->term_id . '">' . $category->name . '</option>';
-                        }
-                        ?>
+                        <option value="Surgery">Surgery</option>
+                        <option value="General">General</option>
+                        <option value="The form">The form</option>
                     </select>
                     <svg class="tw-input-icon pointer-events-none peer-focus:rotate-180"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#down"></use></svg>
                 </div>
@@ -51,9 +43,8 @@ get_header(); ?>
                 <div class="uppercase font-semibold text-16">Sort</div>
                 <div class="relative mt-4">
                     <select name="sort" class="tw-input peer" data-js="select">
-                        <option value="">Newest</option>
+                        <option value="newest">Newest</option>
                         <option value="oldest">Oldest</option>
-                        <option value="popular">Most Popular</option>
                     </select>
                     <svg class="tw-input-icon pointer-events-none peer-focus:rotate-180"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#down"></use></svg>
                 </div>
