@@ -55,5 +55,47 @@
 </div>
 
 <?php wp_footer(); ?>
+
+<script>
+// Force video autoplay
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('hero-video');
+    if (video) {
+        // Try to play the video
+        const playPromise = video.play();
+        
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                console.log('Video autoplay started successfully');
+            }).catch(error => {
+                console.log('Autoplay failed:', error);
+                // If autoplay fails, try again after user interaction
+                document.addEventListener('click', function() {
+                    video.play().catch(e => console.log('Manual play failed:', e));
+                }, { once: true });
+            });
+        }
+        
+        // Ensure video is muted for autoplay
+        video.muted = true;
+        video.volume = 0;
+        
+        // Add event listeners for better control
+        video.addEventListener('loadstart', function() {
+            console.log('Video loading started');
+        });
+        
+        video.addEventListener('canplay', function() {
+            console.log('Video can start playing');
+            video.play().catch(e => console.log('Play on canplay failed:', e));
+        });
+        
+        video.addEventListener('error', function(e) {
+            console.log('Video error:', e);
+        });
+    }
+});
+</script>
+
 </body>
 </html>
