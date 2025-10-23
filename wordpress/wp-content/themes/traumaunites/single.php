@@ -1,6 +1,7 @@
 <?php
 /**
  * The template for displaying all single posts
+ * Updated: 2024-10-23 - Custom design implementation
  */
 
 get_header(); ?>
