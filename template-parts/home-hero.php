@@ -31,14 +31,14 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                             $award_image = get_template_directory_uri() . '/assets/img/award.webp';
                         }
                 ?>
-                <div class="flex-none p-16 bg-white bg-opacity-60 rounded-24 group flex items-start gap-16 min-w-320 max-w-400 backdrop-blur-sm">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo esc_url($award_image); ?>" alt="<?php the_title(); ?>" data-fancybox class="w-120 h-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
                     </div>
-                    <div class="flex flex-col gap-8 flex-1">
-                        <div class="font-semibold text-24 transition group-hover:text-blue-40"><?php the_title(); ?></div>
-                        <div class="text-16 opacity-80"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></div>
+                    <div class="mt-8 px-8 md:px-0 md:mt-0">
+                        <div class="font-semibold transition group-hover:text-blue-40 md:text-24"><?php the_title(); ?></div>
+                        <div class="hidden mt-8 opacity-80 md:block"><?php echo wp_trim_words(get_the_excerpt(), 10); ?></div>
                     </div>
                 </div>
                 <?php
@@ -46,28 +46,28 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                     wp_reset_postdata();
                 else :
                 ?>
-                <div class="flex-none p-16 bg-white bg-opacity-60 rounded-24 group flex items-start gap-16 min-w-320 max-w-400 backdrop-blur-sm">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/license.webp" alt="License" data-fancybox class="size-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
                     </div>
-                    <div class="flex flex-col gap-8 flex-1">
-                        <div class="font-semibold text-24 transition group-hover:text-blue-40">License</div>
-                        <div class="text-16 opacity-80">Four string text about the License text text text text</div>
+                    <div class="mt-8 px-8 md:px-0 md:mt-0">
+                        <div class="font-semibold transition group-hover:text-blue-40 md:text-24">License</div>
+                        <div class="hidden mt-8 opacity-80 md:block">Four string text about the License text text text text</div>
                     </div>
                 </div>
-                <div class="flex-none p-16 bg-white bg-opacity-60 rounded-24 group flex items-start gap-16 min-w-320 max-w-400 backdrop-blur-sm">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/award.webp" alt="Award" data-fancybox class="size-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
                     </div>
-                    <div class="flex flex-col gap-8 flex-1">
-                        <div class="font-semibold text-24 transition group-hover:text-blue-40">Award</div>
-                        <div class="text-16 opacity-80">Four string text about the award text text text text</div>
+                    <div class="mt-8 px-8 md:px-0 md:mt-0">
+                        <div class="font-semibold transition group-hover:text-blue-40 md:text-24">Award</div>
+                        <div class="hidden mt-8 opacity-80 md:block">Four string text about the award text text text text</div>
                     </div>
                 </div>
                 <?php endif; ?>
-                <div class="flex-none flex flex-col justify-between gap-16 p-16 bg-white bg-opacity-60 rounded-24 w-170 backdrop-blur-sm">
+                <div class="w-140 flex-none flex flex-col justify-between gap-16 p-8 bg-white bg-opacity-60 rounded-24 md:w-170 md:p-16">
                     <div class="font-semibold text-center uppercase">More awards and lisenses</div>
                     <a href="<?php echo esc_url(home_url('/awards')); ?>" class="tw-btn tw-btn--secondary">View all</a>
                 </div>
