@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
+    
+    <!-- AirDatepicker for registration forms -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css">
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js"></script>
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
