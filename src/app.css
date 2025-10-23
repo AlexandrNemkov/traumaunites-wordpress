@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		font-family: 'Manrope', sans-serif;
+		font-weight: 400;
+		line-height: 1.25;
+		height: 100%;
+	}
+	body {
+		@apply bg-white text-black min-h-full;
+	}
+	b, strong {
+		@apply font-semibold;
+	}
+}
+
+@layer components {
+	.tw-btn {
+		@apply inline-block bg-blue-40 text-white rounded-full text-20 font-semibold leading-btn py-16 px-32 text-center transition hover:bg-blue-60 disabled:pointer-events-none disabled:bg-blue-disabled md:px-32;
+	}
+	.tw-btn--arrow {
+		@apply inline-flex items-center justify-center gap-8;
+	}
+	.tw-btn--secondary {
+		@apply bg-blue-20 text-blue-60 py-10 hover:bg-blue-10 hover:text-blue-40 disabled:bg-blue-20 disabled:text-blue-disabled-text;
+	}
+	.tw-btn--clear {
+		@apply !bg-transparent p-0 text-blue-60 hover:text-blue-40 disabled:text-blue-disabled-text;
+	}
+	.tw-btn-icon {
+		@apply transition bg-blue-60 size-24 rounded-full group-hover:bg-blue-40 group-disabled:bg-blue-disabled-text;
+	}
+	.tw-tag-label {
+		@apply relative cursor-pointer;
+	}
+	.tw-checkbox-label, .tw-radio-label {
+		@apply relative flex items-center gap-8 cursor-pointer;
+	}
+	.tw-tag-label input, .tw-checkbox-label input, .tw-radio-label input {
+		@apply absolute size-24 opacity-0;
+	}
+	.tw-checkbox {
+		@apply flex-none bg-white text-white size-24 rounded-8 border-2 border-grey-30;
+	}
+	.tw-checkbox-label input:checked + .tw-checkbox {
+		@apply bg-blue-40;
+	}
+	.tw-checkbox-label:hover .tw-checkbox {
+		@apply border-blue-40;
+	}
+	.tw-checkbox-label:hover input:checked + .tw-checkbox {
+		@apply border-grey-30 bg-blue-60;
+	}
+	.tw-checkbox-text, .tw-radio-text {
+		@apply text-16 text-black text-opacity-50;
+	}
+	.tw-checkbox-text a, .tw-radio-text a {
+		@apply underline hover:no-underline;
+	}
+	.tw-tag {
+		@apply relative inline-flex items-center gap-4 bg-white bg-opacity-60 text-blue-60 rounded-full text-12 uppercase font-bold leading-tag py-2 px-8 transition hover:bg-blue-10 hover:bg-opacity-100 ;
+	}
+	.tw-tag--m {
+		@apply bg-blue-40 bg-opacity-100 text-white text-16 font-semibold py-8 px-16 hover:bg-blue-60;
+	}
+	.tw-tag--border {
+		@apply transition-none;
+	}
+	.tw-tag-icon {
+		@apply hidden size-20 -mr-5;
+	}
+	.tw-tag-label input:checked + .tw-tag {
+		@apply bg-blue-10 bg-opacity-100;
+	}
+	.tw-tag-label input:checked + .tw-tag--m {
+		@apply bg-blue-60;
+	}
+	.tw-tag-label input:checked + .tw-tag--border {
+		@apply outline outline-2 outline-white;
+	}
+	.tw-tag-label input:checked + .tw-tag .tw-tag-icon {
+		@apply block;
+	}
+	.tw-input {
+		@apply block w-full bg-white text-black appearance-none outline-0 rounded-12 border-2 border-grey-30 transition text-14 leading-tag py-10 px-14 pr-40 hover:border-blue-40 focus:border-blue-40;
+	}
+	textarea.tw-input {
+		@apply resize-none;
+	}
+	.tw-input::placeholder {
+		@apply text-black text-opacity-30;
+	}
+	.tw-input-icon {
+		@apply cursor-pointer size-24 absolute top-10 right-8 text-blue-30 transition hover:text-blue-40;
+	}
+	.tw-html p, .tw-html ul, .tw-html ol {
+		@apply mt-12 first:mt-0;
+	}
+	.tw-html ul, .tw-html ol {
+		list-style: unset;
+		padding-left: 2em;
+	}
+	.tw-html h2 {
+		@apply text-24 font-bold mt-40 first:mt-0;
+	}
+	.tw-html h3 {
+		@apply text-20 font-bold mt-24 first:mt-0;
+	}
+	.tw-html iframe {
+		@apply w-full aspect-video mt-16 first:mt-0;
+	}
+	.tw-tab {
+		@apply bg-blue-60 text-white rounded-t-24 px-16 py-8 relative leading-none before:bg-blue-60 before:absolute before:bottom-0 before:-right-24 before:size-24 after:bg-white after:absolute after:bottom-0 after:-right-24 after:size-24 after:rounded-bl-24 lg:px-32 lg:py-16 lg:text-32;
+	}
+	.tw-tab + .tw-tab {
+		@apply rounded-l-24 -left-1;
+	}
+	.tw-tab.is-active {
+		@apply bg-blue-30 before:bg-blue-30;
+	}
+	.tw-survey-step-num {
+		@apply bg-white size-24 rounded-full text-center text-blue-30 opacity-60 font-semibold leading-none py-4 lg:size-44 lg:text-24 lg:font-bold lg:py-10;
+	}
+	.tw-survey-step-line {
+		@apply flex-1 bg-white opacity-60 h-2 lg:h-auto lg:w-2;
+	}
+	.tw-survey-step-num.is-active, .tw-survey-step.is-active .tw-survey-step-num, .tw-survey-step.is-finished .tw-survey-step-num {
+		@apply opacity-100 text-blue-40;
+	}
+	.tw-survey-step-num.is-active + .tw-survey-step-line, .tw-survey-step.is-active .tw-survey-step-line, .tw-survey-step.is-finished .tw-survey-step-line {
+		@apply opacity-100;
+	}
+	.tw-survey-step .tw-survey-step-line {
+		@apply hidden lg:block absolute top-44 left-21 -bottom-40;
+	}
+	.tw-survey-step .tw-survey-step-num {
+		@apply hidden lg:block absolute top-0 left-0;
+	}
+	.tw-survey-step {
+		@apply relative hidden lg:block lg:pt-5 lg:pl-64;
+	}
+	.tw-survey-step-title {
+		@apply text-20 font-bold lg:block lg:text-24;
+	}
+	.tw-survey-step-desc {
+		@apply hidden mt-8 text-grey-20 lg:text-20;
+	}
+	.tw-survey-step.is-active, .tw-survey-step.is-finished, .tw-survey-step.is-active .tw-survey-step-desc, .tw-survey-step.is-finished .tw-survey-step-desc {
+		@apply block;
+	}
+	.tw-survey-circle {
+		@apply bg-white size-40 bg-opacity-20 absolute transition flex rounded-full before:size-15 before:block before:rounded-full before:m-auto before:bg-white cursor-pointer before:transition hover:bg-red-40 hover:bg-opacity-50 hover:before:bg-red-40 -translate-x-1/2 -translate-y-1/2;
+	}
+	.tw-survey-circle.is-active {
+		@apply bg-red-40 bg-opacity-50 before:bg-red-40;
+	}
+	.tw-dropdown {
+		@apply absolute shadow-dropdown z-10 left-0 right-0 top-full mt-4 text-14 font-medium flex flex-col gap-2 bg-grey-20 text-black rounded-12 overflow-hidden transition invisible opacity-0 -translate-y-32;
+	}
+	.tw-dropdown.is-visible {
+		@apply visible opacity-100 translate-y-0;
+	}
+}
+
+[hidden] {
+	display: none !important;
+}
+
+.tw-about-carousel.f-carousel {
+	--f-button-prev-pos: -12px;
+	--f-button-next-pos: -12px;
+	--f-carousel-slide-padding: 0 20px;
+	--f-button-width: 56px;
+	--f-button-height: 56px;
+	--f-button-bg: #EEF1FC;
+	--f-button-border: 4px solid #fff;
+	--f-button-border-radius: 100px;
+	--f-carousel-theme-color: #293D89;
+	--f-carousel-dots-height: 36px;
+	--f-carousel-dot-color: #EEF1FC;
+	--f-carousel-dot-width: 16px;
+	--f-carousel-dot-height: 16px;
+	--f-carousel-dot-opacity: 1;
+	--f-carousel-dot-hover-opacity: 1;
+	@apply md:[--f-carousel-slide-padding:16px_20px] lg:[--f-carousel-slide-padding:24px_0] lg:[--f-button-prev-pos:-32px] lg:[--f-button-next-pos:-32px];
+}
+.tw-about-carousel.f-carousel .f-carousel__nav .f-button.is-prev, .tw-about-carousel.f-carousel .f-carousel__nav .f-button.is-next {
+	@apply top-140 md:top-1/2;
+}
+.tw-about-carousel.f-carousel .f-carousel__track {
+	@apply md:items-center;
+}
+.tw-about-carousel.f-carousel .f-carousel__dots li.is-current {
+	--f-carousel-dot-width: 20px;
+	--f-carousel-dot-height: 20px;
+	--f-carousel-dot-color: #D2D9F3;
+}
+
+.tw-datepicker.air-datepicker {
+	@apply shadow-dropdown p-12 box-border rounded-12 border-none !transition -translate-y-32 opacity-0;
+	font-family: inherit;
+	--adp-day-name-color: rgba(19, 22, 28, 0.5);
+	--adp-color: #13161C;
+	--adp-width: 100%;
+	--adp-background-color-hover: #ECECEC;
+	--adp-cell-background-color-selected: #4E66C2;
+	--adp-cell-background-color-selected-hover: #4E66C2;
+	--adp-background-color-selected-other-month: #4E66C2;
+	--adp-background-color-selected-other-month-focused: #4E66C2;
+	--adp-accent-color: #4E66C2;
+	--adp-nav-arrow-color: #fff;
+}
+.tw-datepicker.air-datepicker.-active- {
+	@apply -translate-y-0 opacity-100;
+}
+.tw-datepicker.air-datepicker .air-datepicker-nav {
+	@apply p-0 border-none;
+}
+.tw-datepicker.air-datepicker .air-datepicker-nav--action {
+	@apply size-24 rounded-full bg-blue-60 text-white;
+}
+.tw-datepicker.air-datepicker .air-datepicker-nav--title {
+	@apply uppercase font-semibold rounded-full;
+}
+.tw-datepicker.air-datepicker .air-datepicker-nav--action svg {
+	@apply size-16;
+}
+.tw-datepicker.air-datepicker .air-datepicker--pointer {
+	@apply hidden;
+}
+.tw-datepicker.air-datepicker .air-datepicker-cell {
+	@apply font-semibold rounded-full;
+}
+.tw-datepicker.air-datepicker .air-datepicker-cell.-weekend- {
+	@apply text-red-40;
+}
+.tw-datepicker.air-datepicker .air-datepicker-cell.-disabled- {
+	@apply text-grey-40;
+}
+
+.tw-fancybox.fancybox__container {
+	--fancybox-bg: rgba(23, 26, 37, 0.3);
+	--fancybox-content-color: #13161C;
+}
+.tw-fancybox.fancybox__container .fancybox__content {
+	@apply p-24 rounded-24;
+}
