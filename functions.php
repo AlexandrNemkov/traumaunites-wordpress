@@ -120,7 +120,7 @@ function traumaunites_custom_post_types() {
             'not_found_in_trash' => 'No awards found in trash',
         ),
         'public' => true,
-        'has_archive' => true,
+        'has_archive' => false,
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'menu_icon' => 'dashicons-awards',
     ));
