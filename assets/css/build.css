@@ -18,3 +18,8 @@
         margin-right: 40px;
     }
 }
+
+/* Fixed spacing from title to carousel */
+.tw-about-carousel {
+    margin-top: 40px !important;
+}
