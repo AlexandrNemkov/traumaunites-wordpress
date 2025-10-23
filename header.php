@@ -22,7 +22,7 @@
         <div class="flex items-center transition <?php echo (is_home() || is_front_page()) ? 'pr-16 lg:pr-24 group-[.is-fixed]:bg-blue-20 group-[.is-fixed]:px-16 lg:group-[.is-fixed]:px-32 group-[.is-fixed]:rounded-32 lg:group-[.is-fixed]:-mx-32' : 'bg-blue-20 p-16 lg:px-32 rounded-32 lg:-mx-32'; ?> group-[.is-fixed]:py-8 group-[.is-fixed]:shadow-dropdown">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="relative text-black flex flex-none items-center gap-6 text-20 font-extrabold leading-none transition <?php echo (is_home() || is_front_page()) ? 'bg-white py-22 pr-16 rounded-br-24 group-[.is-fixed]:p-0 group-[.is-fixed]:bg-transparent' : ''; ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="20" height="20" alt="<?php bloginfo('name'); ?>">
-                <?php bloginfo('name'); ?>
+                T-EXPERT
                 <?php if (is_home() || is_front_page()) : ?>
                 <div class="bg-white absolute top-0 -right-24 group-[.is-fixed]:hidden"><div class="size-24 bg-blue-20 rounded-tl-24"></div></div>
                 <div class="bg-white absolute -bottom-24 left-0 group-[.is-fixed]:hidden"><div class="size-24 bg-blue-20 rounded-tl-24"></div></div>

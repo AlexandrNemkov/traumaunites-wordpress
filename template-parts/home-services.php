@@ -20,11 +20,11 @@ $services_query = new WP_Query(array(
                         <?php 
                         $service_icon = get_post_meta(get_the_ID(), '_service_icon', true);
                         if ($service_icon) : ?>
-                            <img src="<?php echo esc_url($service_icon); ?>" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240">
+                            <img src="<?php echo esc_url($service_icon); ?>" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240 object-cover">
                         <?php elseif (has_post_thumbnail()) : ?>
-                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240">
+                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240 object-cover">
                         <?php else : ?>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="<?php the_title(); ?>" class="size-100 rounded-full lg:size-240 object-cover">
                         <?php endif; ?>
                         <div class="flex-1">
                             <div class="text-20 font-semibold lg:text-24"><?php the_title(); ?></div>
@@ -45,21 +45,21 @@ $services_query = new WP_Query(array(
             <?php else : ?>
                 <!-- Default services if none are added -->
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="" class="size-100 rounded-full lg:size-240">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-1.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
                         <div class="text-20 font-semibold lg:text-24">Orthopedic and trauma surgery</div>
                         <div class="mt-8 opacity-50 lg:text-20">Surgeons, nurses and administrators complete a human and professional team of total trust.</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-2.webp" alt="" class="size-100 rounded-full lg:size-240">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-2.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
                         <div class="text-20 font-semibold lg:text-24">Continuous innovation</div>
                         <div class="mt-8 opacity-50 lg:text-20">We work with the latest surgical techniques to resolve injuries to the brachial plexus and peripheral nerve.</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-8 md:flex-col md:text-center md:justify-center">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-3.webp" alt="" class="size-100 rounded-full lg:size-240">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/service-3.webp" alt="" class="size-100 rounded-full lg:size-240 object-cover">
                     <div class="flex-1">
                         <div class="text-20 font-semibold lg:text-24">Minimally invasive surgery</div>
                         <div class="mt-8 opacity-50 lg:text-20">We opt for a surgery with lower risk for the patient and with a shorter recovery time.</div>
