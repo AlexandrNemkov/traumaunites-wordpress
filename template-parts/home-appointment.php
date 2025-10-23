@@ -311,3 +311,53 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
         </form>
     </div>
 </section>
+
+<script>
+// Initialize AirDatepicker for appointment form
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for AirDatepicker to be available
+    if (typeof AirDatepicker !== 'undefined') {
+        console.log('Initializing AirDatepicker for appointment form...');
+        document.querySelectorAll('[data-js="datepicker"]').forEach(elem => {
+            // Determine if this is a birth date field
+            const isBirthDate = elem.name === 'birth_date' || elem.name === 'birthdate';
+            
+            new AirDatepicker(elem, {
+                locale: {
+                    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    today: 'Today',
+                    clear: 'Clear',
+                    dateFormat: 'mm/dd/yyyy',
+                    timeFormat: 'hh:mm aa',
+                    firstDay: 0
+                },
+                container: elem.parentElement,
+                classes: 'tw-datepicker',
+                prevHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#left"></use></svg>',
+                nextHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#right"></use></svg>',
+                autoClose: true,
+                // For birth date: allow past dates only, for appointment date: allow future dates only
+                minDate: isBirthDate ? new Date(1900, 0, 1) : new Date(),
+                maxDate: isBirthDate ? new Date() : new Date(2030, 11, 31),
+                navTitles: {
+                    'days': 'yyyy MMMM',
+                },
+                position({ $datepicker, $target, $pointer }) {
+                    $datepicker.style.left = '0';
+                    $datepicker.style.right = '0';
+                    $datepicker.style.top = ($target.offsetHeight + 4) + 'px';
+                },
+                onSelect: ({ date, formattedDate, datepicker }) => {
+                    elem.dispatchEvent(new Event('change', { bubbles: true }));
+                },
+            });
+        });
+    } else {
+        console.error('AirDatepicker not loaded for appointment form!');
+    }
+});
+</script>
