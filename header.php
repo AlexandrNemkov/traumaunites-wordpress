@@ -74,9 +74,9 @@
 <?php
 // Default menu fallback
 function traumaunites_default_menu() {
-    echo '<a href="#about" class="px-16 py-12 bg-white transition hover:text-blue-40">About</a>';
-    echo '<a href="#services" class="px-16 py-12 bg-white transition hover:text-blue-40">Services</a>';
-    echo '<a href="#appointment-form" class="px-16 py-12 bg-white transition hover:text-blue-40">Book an appointment</a>';
+    echo '<a href="' . esc_url(home_url('/#about')) . '" class="px-16 py-12 bg-white transition hover:text-blue-40">About</a>';
+    echo '<a href="' . esc_url(home_url('/#services')) . '" class="px-16 py-12 bg-white transition hover:text-blue-40">Services</a>';
+    echo '<a href="' . esc_url(home_url('/#appointment-form')) . '" class="px-16 py-12 bg-white transition hover:text-blue-40">Book an appointment</a>';
     echo '<a href="' . esc_url(home_url('/articles')) . '" class="px-16 py-12 bg-white transition hover:text-blue-40">Articles</a>';
 }
 ?>
