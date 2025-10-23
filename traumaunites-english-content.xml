@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+	<title>TraumaUnites Medical Center</title>
+	<link>http://localhost</link>
+	<description>Medical center specializing in trauma and orthopedic surgery</description>
+	<pubDate>Mon, 22 Oct 2024 20:00:00 +0000</pubDate>
+	<language>en</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+
+	<!-- Services -->
+	<item>
+		<title>Orthopedic and trauma surgery</title>
+		<link>http://localhost/services/orthopedic-trauma-surgery</link>
+		<pubDate>Mon, 22 Oct 2024 20:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/services/orthopedic-trauma-surgery</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>Surgeons, nurses and administrators complete a human and professional team of total trust.</p>
+
+<h3>Our Services:</h3>
+<ul>
+<li>Diagnosis and treatment of fractures</li>
+<li>Arthroscopic surgery</li>
+<li>Sports injury treatment</li>
+<li>Joint replacement</li>
+<li>Post-injury rehabilitation</li>
+</ul>
+
+<p>Our team of experienced trauma and orthopedic surgeons is ready to help you recover from any musculoskeletal injuries.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Surgeons, nurses and administrators complete a human and professional team of total trust.]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date>2024-10-22 20:00:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>orthopedic-trauma-surgery</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>services</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="services" nicename="orthopedic-trauma-surgery"><![CDATA[Orthopedic and trauma surgery]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[service_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/service-1.webp]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Continuous innovation</title>
+		<link>http://localhost/services/continuous-innovation</link>
+		<pubDate>Mon, 22 Oct 2024 20:01:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/services/continuous-innovation</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>We work with the latest surgical techniques to resolve injuries to the brachial plexus and peripheral nerve.</p>
+
+<h3>Innovation Areas:</h3>
+<ul>
+<li>Brachial plexus surgery</li>
+<li>Peripheral nerve reconstruction</li>
+<li>Microsurgical techniques</li>
+<li>Advanced imaging technology</li>
+<li>Minimally invasive procedures</li>
+</ul>
+
+<p>Our commitment to continuous innovation ensures that our patients receive the most advanced and effective treatments available.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[We work with the latest surgical techniques to resolve injuries to the brachial plexus and peripheral nerve.]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date>2024-10-22 20:01:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:01:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>continuous-innovation</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>services</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="services" nicename="continuous-innovation"><![CDATA[Continuous innovation]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[service_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/service-2.webp]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Minimally invasive surgery</title>
+		<link>http://localhost/services/minimally-invasive-surgery</link>
+		<pubDate>Mon, 22 Oct 2024 20:02:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/services/minimally-invasive-surgery</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>We opt for a surgery with lower risk for the patient and with a shorter recovery time.</p>
+
+<h3>Benefits:</h3>
+<ul>
+<li>Reduced surgical trauma</li>
+<li>Faster recovery</li>
+<li>Minimal scarring</li>
+<li>Lower infection risk</li>
+<li>Shorter hospital stays</li>
+</ul>
+
+<p>Our minimally invasive approach prioritizes patient safety and comfort while achieving excellent surgical outcomes.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[We opt for a surgery with lower risk for the patient and with a shorter recovery time.]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date>2024-10-22 20:02:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:02:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>minimally-invasive-surgery</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>services</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="services" nicename="minimally-invasive-surgery"><![CDATA[Minimally invasive surgery]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[service_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/service-3.webp]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<!-- Doctors -->
+	<item>
+		<title>Dr. Joaquim Casañas</title>
+		<link>http://localhost/doctors/dr-joaquim-casanas</link>
+		<pubDate>Mon, 22 Oct 2024 20:10:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/doctors/dr-joaquim-casanas</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>Dr. Joaquim Casañas is a highly regarded specialist in peripheral nerve and hand surgery with more than 25 years experience.</p>
+
+<h3>Professional Achievements:</h3>
+<ul>
+<li>Dr. Casañas is the President of the Spanish Society of Hand Surgery and a</li>
+<li>member of several committees of the European Federation for Surgery of the Hand and</li>
+<li>a Fellow of the American Society for Surgery of the Hand.</li>
+</ul>
+
+<p>With extensive experience in complex hand and peripheral nerve surgeries, Dr. Casañas leads our team with expertise and dedication.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Dr. Joaquim Casañas is a highly regarded specialist in peripheral nerve and hand surgery with more than 25 years experience.]]></excerpt:encoded>
+		<wp:post_id>201</wp:post_id>
+		<wp:post_date>2024-10-22 20:10:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:10:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>dr-joaquim-casanas</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>doctors</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="doctors" nicename="dr-joaquim-casanas"><![CDATA[Dr. Joaquim Casañas]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/about-slide-1.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_specialization]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Peripheral nerve and hand surgery]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[25+ years]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Team of professionals</title>
+		<link>http://localhost/doctors/team-of-professionals</link>
+		<pubDate>Mon, 22 Oct 2024 20:11:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/doctors/team-of-professionals</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>The T-EXPERT team is made up of</p>
+
+<ul>
+<li>12 senior surgeons,</li>
+<li>10 nurses,</li>
+<li>4 administrative staff and a</li>
+<li>team of neurologists and physiotherapists,</li>
+</ul>
+
+<p>who offer a traumatology and orthopedic surgery assistance service, with high qualifications and specialization in all facets of traumatology.</p>
+
+<h3>Our Team Structure:</h3>
+<ul>
+<li>Senior surgeons specializing in different areas</li>
+<li>Experienced nursing staff</li>
+<li>Administrative support team</li>
+<li>Neurologists and physiotherapists</li>
+<li>Support staff for patient care</li>
+</ul>]]></content:encoded>
+		<excerpt:encoded><![CDATA[The T-EXPERT team is made up of 12 senior surgeons, 10 nurses, 4 administrative staff and a team of neurologists and physiotherapists.]]></excerpt:encoded>
+		<wp:post_id>202</wp:post_id>
+		<wp:post_date>2024-10-22 20:11:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:11:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>team-of-professionals</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>doctors</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="doctors" nicename="team-of-professionals"><![CDATA[Team of professionals]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/about-slide-2.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_specialization]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Multi-disciplinary team]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Combined 200+ years]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>T-EXPERT</title>
+		<link>http://localhost/doctors/t-expert</link>
+		<pubDate>Mon, 22 Oct 2024 20:12:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/doctors/t-expert</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>T-EXPERT is a traumatology and orthopedic surgery unit, located at the Teknon Medical Center, and directed by Dr. Joaquim Casañas.</p>
+
+<p>T-EXPERT began its career in 2005 with the main objective of offering highly specialized medical care with great technological value, personalized attention to facilitate communication with the patient, and a high capacity to respond to their problems.</p>
+
+<h3>Our Mission:</h3>
+<ul>
+<li>Highly specialized medical care</li>
+<li>Great technological value</li>
+<li>Personalized attention</li>
+<li>Facilitate communication with patients</li>
+<li>High capacity to respond to problems</li>
+</ul>
+
+<p>Since 2005, T-EXPERT has been committed to excellence in trauma and orthopedic care.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[T-EXPERT is a traumatology and orthopedic surgery unit, located at the Teknon Medical Center, and directed by Dr. Joaquim Casañas.]]></excerpt:encoded>
+		<wp:post_id>203</wp:post_id>
+		<wp:post_date>2024-10-22 20:12:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:12:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>t-expert</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>doctors</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="doctors" nicename="t-expert"><![CDATA[T-EXPERT]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/about-slide-3.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_specialization]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Traumatology and orthopedic surgery]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[doctor_experience]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Since 2005]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<!-- Awards -->
+	<item>
+		<title>License</title>
+		<link>http://localhost/awards/license</link>
+		<pubDate>Mon, 22 Oct 2024 20:20:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/awards/license</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>Four string text about the License text text text text</p>
+
+<p>This license represents our commitment to maintaining the highest standards of medical practice and patient care.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Four string text about the License text text text text]]></excerpt:encoded>
+		<wp:post_id>301</wp:post_id>
+		<wp:post_date>2024-10-22 20:20:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:20:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>license</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>awards</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="awards" nicename="license"><![CDATA[License]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[award_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/license.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[award_description]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Four string text about the License text text text text]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<item>
+		<title>Award</title>
+		<link>http://localhost/awards/award</link>
+		<pubDate>Mon, 22 Oct 2024 20:21:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/awards/award</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>Four string text about the award text text text text</p>
+
+<p>This award recognizes our excellence in medical care and our commitment to patient outcomes.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Four string text about the award text text text text]]></excerpt:encoded>
+		<wp:post_id>302</wp:post_id>
+		<wp:post_date>2024-10-22 20:21:00</wp:post_date>
+		<wp:post_date_gmt>2024-10-22 20:21:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>award</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>awards</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="awards" nicename="award"><![CDATA[Award]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[award_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[/assets/img/award.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[award_description]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Four string text about the award text text text text]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+
+	<!-- Articles -->
+	<item>
+		<title>Exoneurolysis surgery on the arm: procedure and benefits</title>
+		<link>http://localhost/articles/exoneurolysis-surgery-arm</link>
+		<pubDate>Mon, 25 Mar 2024 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">http://localhost/articles/exoneurolysis-surgery-arm</guid>
+		<description></description>
+		<content:encoded><![CDATA[<p>Exoneurolysis in the arm is a surgical procedure to relieve nerve compression. It is performed to eliminate tumors that affect the nerves of the arm.</p>
+
+<h2>Pathologies of the radiocarpal joint</h2>
+<p>There are people who consult us for pain at the level of the radiocarpal joint, commonly known as the wrist, as a consequence of an evolutionary process over time after having suffered a fracture at this level or for autoimmune pathologies such as rheumatoid arthritis or lupus, which causes wear and tear of the cartilage between the bones of the hand and those of the wrist.</p>
+
+<p>The consequences are pain and inability to carry out activities of daily living.</p>
+
+<h2>Compensation for Basic Activities</h2>
+<p>If this does not imply an alteration of basic activities such as hygiene and eating, it is compensable for a time. Now, when this already affects us for activities such as eating and hygiene, that is where we have to start thinking about what surgical treatment alternatives we have.</p>
+
+<p>One of those that is giving the best results in patients from a certain group, that is, patients over 60 or 65 years old, with low functional demand, we are not talking about strength workers, is the wrist prosthesis.</p>
+
+<h2>Purpose and Design of Wrist Prosthesis</h2>
+<p>Just as there are knee prostheses and hip prostheses, the wrist prosthesis is designed for those cases where we have osteoarthritis of the radiocarpal joint, osteoarthritis of the wrist, which has reached a point where it represents a limitation for basic activities of everyday life. That is to say, we are not proposing a wrist prosthesis to continue playing tennis, we are proposing a wrist prosthesis for these hygiene and eating and social communication activities so that they are well covered and do not cause pain.</p>
+
+<p>The wrist prosthesis consists of replacing the affected area to eliminate pain. The objective is no longer to gain more mobility but rather to not have pain.</p>
+
+<p>These are usually patients who come with a mobility deficit resulting from years of evolution of a degenerative process and this causes the rest of the structures, ligaments, tendons, nerves, to have lost elasticity.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Exoneurolysis in the arm is a surgical procedure to relieve nerve compression. It is performed to eliminate tumors that affect the nerves of the arm.]]></excerpt:encoded>
+		<wp:post_id>401</wp:post_id>
+		<wp:post_date>2024-03-25 10:00:00</wp:post_date>
+		<wp:post_date_gmt>2024-03-25 10:00:00</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>exoneurolysis-surgery-arm</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>post</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="joint-pain"><![CDATA[Joint pain]]></category>
+		<category domain="category" nicename="sports-injuries"><![CDATA[Sports injuries]]></category>
+	</item>
+
+</channel>
+</rss>
