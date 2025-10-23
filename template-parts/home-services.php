@@ -10,7 +10,7 @@ $services_query = new WP_Query(array(
 ));
 ?>
 
-<section class="relative mt-80 md:mt-120 lg:mt-150 overflow-hidden">
+<section id="services" class="relative mt-80 md:mt-120 lg:mt-150 overflow-hidden">
     <div class="container">
         <h2 class="text-28 font-semibold lg:text-48" data-animate="text">Our medical services</h2>
         <div class="mt-20 grid grid-cols-1 gap-20 md:grid-cols-3 lg:mt-40" data-animate="slideleft">
