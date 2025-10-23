@@ -6,3 +6,72 @@ Author: TraumaUnites Team
 */
 
 /* This file is required by WordPress but actual styles are in the build.css file */
+
+/* Custom AirDatepicker styles */
+.tw-datepicker.air-datepicker {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-32px);
+    opacity: 0;
+    font-family: inherit;
+    --adp-day-name-color: rgba(19, 22, 28, 0.5);
+    --adp-color: #13161C;
+    --adp-width: 100%;
+    --adp-background-color-hover: #ECECEC;
+    --adp-cell-background-color-selected: #4E66C2;
+    --adp-cell-background-color-selected-hover: #4E66C2;
+    --adp-background-color-selected-other-month: #4E66C2;
+    --adp-background-color-selected-other-month-focused: #4E66C2;
+    --adp-accent-color: #4E66C2;
+    --adp-nav-arrow-color: #fff;
+}
+
+.tw-datepicker.air-datepicker.-active- {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-nav {
+    padding: 0;
+    border: none;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-nav--action {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #4E66C2;
+    color: white;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-nav--title {
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-nav--action svg {
+    width: 16px;
+    height: 16px;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker--pointer {
+    display: none;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-cell {
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-cell.-weekend- {
+    color: #E53E3E;
+}
+
+.tw-datepicker.air-datepicker .air-datepicker-cell.-disabled- {
+    color: #A0AEC0;
+}

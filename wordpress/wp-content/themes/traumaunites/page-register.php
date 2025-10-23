@@ -30,7 +30,7 @@ get_header(); ?>
                 <div>
                     <div class="uppercase font-semibold text-16 text-black text-opacity-50">Date of birth</div>
                     <div class="relative mt-4">
-                        <input type="date" name="birth_date" class="tw-input" placeholder="mm/dd/yyyy" required>
+                        <input type="text" name="birth_date" class="tw-input" data-js="datepicker" placeholder="mm/dd/yyyy" readonly required>
                         <svg class="tw-input-icon pointer-events-none"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#calendar"></use></svg>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ get_header(); ?>
                     <svg class="tw-checkbox"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#tick"></use></svg>
                     <div class="tw-checkbox-text">By registering I agree with <a href="<?php echo home_url('/legal'); ?>">Terms</a></div>
                 </label>
-                <button type="submit" class="tw-btn tw-btn--arrow mt-16 w-full group">
+                <button type="submit" class="tw-btn tw-btn--arrow mt-16 w-full group" disabled>
                     <span>Register</span>
                     <svg class="tw-btn-icon p-4"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#arrow-up"></use></svg>
                 </button>
@@ -73,6 +73,69 @@ document.addEventListener("DOMContentLoaded", function() {
             input.setAttribute('type', type);
         });
     });
+
+    // Initialize AirDatepicker
+    if (typeof AirDatepicker !== 'undefined') {
+        document.querySelectorAll('[data-js="datepicker"]').forEach(elem => {
+            new AirDatepicker(elem, {
+                locale: {
+                    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    today: 'Today',
+                    clear: 'Clear',
+                    dateFormat: 'mm/dd/yyyy',
+                    timeFormat: 'hh:mm aa',
+                    firstDay: 0
+                },
+                container: elem.parentElement,
+                classes: 'tw-datepicker',
+                prevHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#left"></use></svg>',
+                nextHtml: '<svg><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#right"></use></svg>',
+                autoClose: true,
+                minDate: new Date(1900, 0, 1),
+                maxDate: new Date(),
+                navTitles: {
+                    'days': 'yyyy MMMM',
+                },
+                position({ $datepicker, $target, $pointer }) {
+                    $datepicker.style.left = '0';
+                    $datepicker.style.right = '0';
+                    $datepicker.style.top = ($target.offsetHeight + 4) + 'px';
+                },
+                onSelect: ({ date, formattedDate, datepicker }) => {
+                    elem.dispatchEvent(new Event('change', { bubbles: true }));
+                },
+            });
+        });
+    }
+
+    // Form validation and button state
+    const form = document.querySelector('[data-js="form"]');
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const requiredFields = form.querySelectorAll('input[required], input[name="agree"]');
+    
+    function checkFormValidity() {
+        let isValid = true;
+        requiredFields.forEach(field => {
+            if (field.type === 'checkbox') {
+                if (!field.checked) isValid = false;
+            } else {
+                if (!field.value.trim()) isValid = false;
+            }
+        });
+        submitBtn.disabled = !isValid;
+    }
+    
+    requiredFields.forEach(field => {
+        field.addEventListener('input', checkFormValidity);
+        field.addEventListener('change', checkFormValidity);
+    });
+    
+    // Initial check
+    checkFormValidity();
 });
 </script>
 
