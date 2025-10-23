@@ -67,7 +67,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                     </div>
                 </div>
                 <?php endif; ?>
-                <div class="w-140 flex-none flex flex-col justify-between gap-16 p-8 bg-white bg-opacity-60 rounded-24 md:w-170 md:p-16">
+                <div class="flex-none flex flex-col justify-between gap-16 p-16 bg-white bg-opacity-60 rounded-24 w-170 backdrop-blur-sm">
                     <div class="font-semibold text-center uppercase">More awards and lisenses</div>
                     <a href="<?php echo esc_url(home_url('/awards')); ?>" class="tw-btn tw-btn--secondary">View all</a>
                 </div>
