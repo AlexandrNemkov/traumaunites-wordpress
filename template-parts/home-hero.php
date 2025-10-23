@@ -31,7 +31,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                             $award_image = get_template_directory_uri() . '/assets/img/award.webp';
                         }
                 ?>
-                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:w-1/3">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo esc_url($award_image); ?>" alt="<?php the_title(); ?>" data-fancybox class="size-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
@@ -46,7 +46,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                     wp_reset_postdata();
                 else :
                 ?>
-                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:w-1/3">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/license.webp" alt="License" data-fancybox class="size-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
@@ -56,7 +56,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                         <div class="hidden mt-8 opacity-80 md:block">Four string text about the License text text text text</div>
                     </div>
                 </div>
-                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:flex-1 xl:w-auto">
+                <div class="flex-none p-8 bg-white bg-opacity-60 rounded-24 group md:flex md:w-5/12 md:items-start md:gap-16 md:p-16 xl:w-1/3">
                     <div class="relative flex-none group/pic">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/award.webp" alt="Award" data-fancybox class="size-120 rounded-12 object-cover cursor-pointer">
                         <svg class="size-24 transition absolute right-8 bottom-8 pointer-events-none opacity-50 group-hover/pic:opacity-100"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#expand"></use></svg>
