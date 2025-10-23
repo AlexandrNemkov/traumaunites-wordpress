@@ -4,6 +4,10 @@ Template Name: Custom Register Page
 */
 get_header(); ?>
 
+<!-- Load AirDatepicker CSS and JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css">
+<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js"></script>
+
 <section class="relative mt-24">
     <div class="container">
         <div class="flex items-center gap-4 flex-wrap text-black text-opacity-80">
@@ -75,7 +79,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Initialize AirDatepicker
+    console.log('AirDatepicker available:', typeof AirDatepicker !== 'undefined');
     if (typeof AirDatepicker !== 'undefined') {
+        console.log('Initializing AirDatepicker...');
         document.querySelectorAll('[data-js="datepicker"]').forEach(elem => {
             new AirDatepicker(elem, {
                 locale: {
@@ -109,6 +115,14 @@ document.addEventListener("DOMContentLoaded", function() {
                     elem.dispatchEvent(new Event('change', { bubbles: true }));
                 },
             });
+        });
+    } else {
+        console.error('AirDatepicker not loaded! Falling back to native date input.');
+        // Fallback: convert to native date input if AirDatepicker fails
+        document.querySelectorAll('[data-js="datepicker"]').forEach(elem => {
+            elem.type = 'date';
+            elem.removeAttribute('readonly');
+            elem.removeAttribute('data-js');
         });
     }
 

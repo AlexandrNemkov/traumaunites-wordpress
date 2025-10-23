@@ -43,9 +43,11 @@ function traumaunites_scripts() {
     // Enqueue survey JavaScript
     wp_enqueue_script('traumaunites-survey', $theme_url . '/assets/js/survey.js', array(), '1.0.0', true);
     
-    // Enqueue AirDatepicker
-    wp_enqueue_style('air-datepicker-css', 'https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css', array(), '3.5.2');
-    wp_enqueue_script('air-datepicker-js', 'https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js', array(), '3.5.2', true);
+    // Enqueue AirDatepicker only on registration and edit-profile pages
+    if (is_page('register') || is_page('edit-profile') || is_page('add-patient')) {
+        wp_enqueue_style('air-datepicker-css', 'https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.css', array(), '3.5.2');
+        wp_enqueue_script('air-datepicker-js', 'https://cdn.jsdelivr.net/npm/air-datepicker@3.5.2/air-datepicker.js', array(), '3.5.2', true);
+    }
     
     // Enqueue Google Fonts
     wp_enqueue_style('traumaunites-fonts', 'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap', array(), null);
