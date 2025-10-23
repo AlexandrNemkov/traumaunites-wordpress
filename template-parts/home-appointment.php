@@ -214,7 +214,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                             <h3 class="tw-survey-step-title">Anything we need to know about your problem</h3>
                             <div class="tw-survey-step-desc mt-16">
                                 <div class="relative">
-                                    <textarea name="description" class="tw-input" rows="5" placeholder="Your own description (optional)"></textarea>
+                                    <textarea name="description" class="tw-input tw-textarea-large" rows="8" placeholder="Your own description (optional)"></textarea>
                                     <svg class="tw-input-icon" data-js="input_clear" hidden><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#cross"></use></svg>
                                 </div>
                             </div>
@@ -228,7 +228,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                                     <div>
                                         <div class="uppercase font-semibold text-16 text-white">Date</div>
                                         <div class="relative mt-4">
-                                            <input type="date" name="date" class="tw-input" data-js="datepicker" placeholder="Not selected" required>
+                                            <input type="text" name="date" class="tw-input" data-js="datepicker" placeholder="Not selected" readonly required>
                                             <svg class="tw-input-icon pointer-events-none"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#calendar"></use></svg>
                                         </div>
                                     </div>
@@ -267,7 +267,7 @@ $body_data = include get_template_directory() . '/template-parts/body-data.php';
                                     <div>
                                         <div class="uppercase font-semibold text-16 text-white">Date of birth</div>
                                         <div class="relative mt-4">
-                                            <input type="date" name="birthdate" class="tw-input" data-js="datepicker" placeholder="Not selected" readonly>
+                                            <input type="text" name="birthdate" class="tw-input" data-js="datepicker" placeholder="Not selected" readonly>
                                             <svg class="tw-input-icon pointer-events-none"><use href="<?php echo get_template_directory_uri(); ?>/assets/img/sprite.svg#calendar"></use></svg>
                                         </div>
                                     </div>

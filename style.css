@@ -75,3 +75,12 @@ Author: TraumaUnites Team
 .tw-datepicker.air-datepicker .air-datepicker-cell.-disabled- {
     color: #A0AEC0;
 }
+
+/* Large textarea for appointment form */
+.tw-textarea-large {
+    min-height: 200px !important;
+    height: 200px !important;
+    resize: vertical;
+    line-height: 1.5;
+    padding: 16px 14px;
+}
